@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- Título de la página -->
+    <title>La NBAcción</title>
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="fontawesome-free-5.3.1-web/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/c4eb57b10e.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/mipaginaweb.css" />
+  </head>
+
+  <body>
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Encabezado de la página -->
+    <header id="title">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <!-- Nombre de la aplicación que contiene un enlace a la página principal -->
+          <a class="navbar-brand" href="mipaginaweb.html">NBAcción</a>
+
+          <!-- Botón tipo hamburuesa que se muestra cuando se visualiza la web desde un dispositivo móvil -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuhamburguesa"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú principal -->
+          <div id="menuhamburguesa" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://es.global.nba.com/standings/"><i class="fa-solid fa-basketball icon"></i></i>Clasificación</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="https://es.global.nba.com/schedule/"><i class="fas fa-shopping-basket icon"></i>Partidos</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://es.global.nba.com/statistics/"><i class="fa-solid fa-calculator icon"></i>Estadísticas</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Imagen -->
+        <div class="row">
+          <!-- Eslogan-->
+          <div class="col-lg-6">
+            <h1 id="eslogan">Tu casa NBA</h1>
+            
+          </div>
+
+          <!-- Imagen de nuestra web-->
+          <div id="curry" class="col-sm-6">
+            <img src="imagenes/curry.jpg" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Características destacadas de nuestra web -->
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="fa-solid fa-house fa-5x"></i>
+          <h3>Oficial</h3>
+          <p>Somos colaboradores oficiales de la NBA.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="fa-solid fa-user fa-5x"></i>
+          <h3>Periodismo</h3>
+          <p>Los mejores escritores sobre NBA.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="fa-solid fa-star fa-5x"></i>
+          <h3>Sorteos</h3>
+          <p>
+            Grandes sorteos mensuales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials">
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="10000"
+        data-bs-keyboard="true"
+        data-bs-pause="hover"
+      >
+        <div class="carousel-inner">
+          <!-- Primer testimonio -->
+          <div class="carousel-item active">
+            <h2>"Quiero ganar otro anillo"</h2>
+            <img
+              class="testimonial-img"
+              src="imagenes/lebron.png"
+              alt="dog-profile"
+            />
+            <em>Lebron James, LA Lakers</em>
+          </div>
+
+          <!-- Segundo testimonio-->
+          <div class="carousel-item">
+            <h2>"El MVP no es suficiente"</h2>
+            <img
+              class="testimonial-img"
+              src="imagenes/Giannis-Antetokounmpo-PNG-File.png"
+              alt="dog-profile"
+            />
+            <em>Giannis, Milwaukee Bucks</em>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="pricing">
+      <h2>Modalidades de suscripción a NBA League Pass</h2>
+      <p>Escoja la que se ajuste a sus necesidades</p>    
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 pricing-column">
+          <div class="card">
+            <div class="card-header">
+              Económico
+            </div>
+            <div class="card-body">
+              <p>9€/mes</p>
+              <p>9 partidos al mes.</p>
+              <button type="button" class="btn btn-lg btn-outline-dark download-button">La quiero</button>
+            </div>
+          </div>
+        </div>   
+
+        <div class="col-lg-4 col-md-6 pricing-column">
+          <div class="card">
+            <div class="card-header">
+              Itermedio
+            </div>
+            <div class="card-body">
+              <p>15€/mes</p>
+              <p>Todos los partidos de tu equipo preferido.</p>
+              <button type="button" class="btn btn-lg btn-outline-dark download-button">La quiero</button>
+            </div>
+          </div>
+        </div>   
+
+        <div class="col-lg-4 col-md-6 pricing-column">
+          <div class="card">
+            <div class="card-header">
+              Premium
+            </div>
+            <div class="card-body">
+              <p>30€/mes</p>
+              <p>Todos los partidos.</p>
+              <button type="button" class="btn btn-lg btn-outline-dark download-button">La quiero</button>
+            </div>
+          </div>
+        </div>           
+
+      </div> 
+    </section>    
+
+      <!-- Footer -->
+
+    <footer id="footer">
+      <div class="social">
+        <span class="spanSpace">
+          <a href="https://github.com/joelelrincon/LND-joel-UT4"><i class="fa-brands fa-github fa-2x" style="color: white;"></i></a>
+        </span>
+        <span class="spanSpace">
+          <a href="www.facebook.com"><i class="fab btn-outline-light fa-facebook-f fa-2x" style="color:white;"></i></a>
+        </span>
+        <span class="spanSpace">
+          <a href="www.instagram.com"><i class="fab btn-outline-light fa-instagram fa-2x" style="color:white;"></i></a>
+        </span>
+        <span class="spanSpace">
+          <a href="mailto:joelmorales90@gmail.com" style="color:white;"><i class="fas btn-outline-light fa-envelope fa-2x" style="color:white;"></i></a>
+        </span>
+      </div>
+      <p>© Copyright 2023 NBAcción</p>
+      <p>Hecho por <u>JMM</u></p>
+    </footer>
+</body>
+
+    <section>
+      <br />
+    </section>
+  </body>
+</html>
